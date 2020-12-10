@@ -1,10 +1,10 @@
 <h2 align="center">
-  Grazia Festschrift Wrangling Scripts
+  Guidoti <em>et al.</em>'s Grazia Festschrift Wrangling Scripts
 </h2>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.4313975">
-      <img alt="Digital Object Identifier" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4313975-blue"/>
+  <a href="https://doi.org/10.5281/zenodo.4315771">
+      <img alt="Digital Object Identifier" src="https://zenodo.org/badge/320411847.svg"/>
   </a>
 </p>
 
