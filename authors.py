@@ -2,14 +2,16 @@ import pandas as pd
 from os import path
 
 # Creating custom wrangling method
-def fix_names(x):
-  """[summary]
+def fix_names(ser):
+  """Perform basic string manipulations on the author names, including replacing
+  known undesirable strings, removing end dots, and spliting combined authors.
 
   Args:
-      x ([type]): [description]
+      ser (pandas.Series): series of a given dataframe containing authors' 
+      names
 
   Returns:
-      [type]: [description]
+      list: list of corrected authors' names
   """
   
   x = x.replace(',', '').replace('sp. nov.', ''
@@ -18,14 +20,22 @@ def fix_names(x):
                        ).replace('acuminata Dallas', 'Dallas'
                        ).replace('amplus (Walker', 'Walker')
 
-  if x[-1] == '.':
-      x = x[:-1]
+  # Remove final dot when present
+  if ser[-1] == '.':
+      ser = ser[:-1]
 
-  return [x.strip() for x in x.split('&')]
+  # Split multiple authors into a list and trim spaces
+  return [ser.strip() for ser in ser.split('&')]
 
 
 def transform(filepath, filename):
+  """Transform the input dataframe, resulting in a *.csv  with the grouped by 
+  variable of interest.
 
+  Args:
+      filepath (str): path where the input file is located
+      filename (str): name of the input file
+  """
   # Create pandas.DataFrame
   df = pd.read_csv(path.join(filepath, filename))
 

@@ -3,11 +3,13 @@ from os import path
 
 
 def transform(filepath, filename):
-  """[summary]
+  """Transform the input dataframe, unifying all authors columns after removing
+  the lines of Grazia, to generate an unique frequency count based on co-authors
+  only.
 
   Args:
-      filepath ([type]): [description]
-      filename ([type]): [description]
+      filepath (str): path where the input file is located
+      filename (str): name of the input file
   """
   
   # Creating df, dealing with None
