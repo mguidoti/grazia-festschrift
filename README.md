@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.4313975">
-      <img alt="Digital Object Identifier" scr="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4313975-blue"/>
+      <img alt="Digital Object Identifier" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4313975-blue"/>
   </a>
 </p>
 
