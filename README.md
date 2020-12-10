@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.4313975">
-      <img alt="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4313975-blue"/>
+      <img alt="Digital Object Identifier" scr="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4313975-blue"/>
   </a>
 </p>
 
@@ -23,4 +23,4 @@ Edit main.py to indicate the path to this folder. Finally, navigate to this afor
 
 ## License
 
-MIT. For more detail, please access [here](https://github.com/mguidoti/learn-rocketseat-gostack-level-02/blob/main/LICENSE).
+MIT. For more detail, please access [here](https://github.com/mguidoti/grazia-festschrift/blob/main/LICENSE).
