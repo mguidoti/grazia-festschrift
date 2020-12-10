@@ -14,7 +14,7 @@ def fix_names(ser):
       list: list of corrected authors' names
   """
   
-  x = x.replace(',', '').replace('sp. nov.', ''
+  ser = ser.replace(',', '').replace('sp. nov.', ''
                        ).replace('abruptus (Walker', 'Walker'
                        ).replace('achilles Stal', 'Stal'
                        ).replace('acuminata Dallas', 'Dallas'
