@@ -105,4 +105,5 @@ def transform(filepath, filename):
   df.Journal = df.Journal.apply(fix_journal)
   
   df.to_csv(path.join('output', '{}-transformed.csv'.format(
-                                                      filename[:-4])))
+                                                      filename[:-4])),
+            index=False )

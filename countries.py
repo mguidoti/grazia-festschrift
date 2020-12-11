@@ -47,4 +47,5 @@ def transform(filepath, filename):
 
   # Saving to a new csv
   df_countries.to_csv(path.join('output', '{}-transformed.csv'.format(
-                                                                filename[:-4])))
+                                                                filename[:-4])),
+                      index=False )
