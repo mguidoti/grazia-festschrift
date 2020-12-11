@@ -2,30 +2,30 @@ import pandas as pd
 from os import path
 
 # Creating custom wrangling method
-def fix_names(ser):
+def fix_names(entry):
   """Perform basic string manipulations on the author names, including replacing
   known undesirable strings, removing end dots, and spliting combined authors.
 
   Args:
-      ser (pandas.Series): series of a given dataframe containing authors' 
+      entry (pandas.Series): series of a given dataframe containing authors' 
       names
 
   Returns:
       list: list of corrected authors' names
   """
   
-  ser = ser.replace(',', '').replace('sp. nov.', ''
+  entry = entry.replace(',', '').replace('sp. nov.', ''
                        ).replace('abruptus (Walker', 'Walker'
                        ).replace('achilles Stal', 'Stal'
                        ).replace('acuminata Dallas', 'Dallas'
                        ).replace('amplus (Walker', 'Walker')
 
   # Remove final dot when present
-  if ser[-1] == '.':
-      ser = ser[:-1]
+  if entry[-1] == '.':
+      entry = entry[:-1]
 
   # Split multiple authors into a list and trim spaces
-  return [ser.strip() for ser in ser.split('&')]
+  return [entry.strip() for entry in entry.split('&')]
 
 
 def transform(filepath, filename):
