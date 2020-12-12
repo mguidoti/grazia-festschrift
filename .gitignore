@@ -3,3 +3,4 @@
 .vscode/
 input/
 output/
+__pycache__/
