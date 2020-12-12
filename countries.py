@@ -45,7 +45,10 @@ def transform(filepath, filename):
   df_countries = countries.value_counts().rename_axis('countries'
                                                     ).reset_index(name='counts')
 
+  # Rename column countries to country, in order to work on Google Data Studio
+  df_countries.rename(columns={'countries': 'country'}, inplace=True)
+  
   # Saving to a new csv
-  df_countries.to_csv(path.join('output', '{}-transformed.csv'.format(
+  df_countries.to_csv(path.join('output', '{}-countries-transformed.csv'.format(
                                                                 filename[:-4])),
                       index=False )
