@@ -12,11 +12,14 @@ This is a dedicated repository to the wrangling scripts used to prepare Guidoti'
 
 ## Running
 
-Install Pipenv, and run pipenv install. Next, please, download the [used dataset](https://zenodo.org/record/4316057) first. Then, place the following files in a knonw folder:
+Install [Pipenv](https://pypi.org/project/pipenv/), and `run pipenv install`. Next, please, download the [used dataset](http://zenodo.org/record/4319233) first. Then, place the following files in a knonw folder:
 
+- grazia-festschrift-basic_metadata.csv
 - grazia-festschrift-coauthors_data.csv
 - grazia-festschrift-tb_stats-collector_name.csv
 - grazia-festschrift-tb_stats-taxon_authority_names.csv
+- grazia-festschrift-tb_stats-taxonomic_ranks.csv
+- grazia-festschrift-tb_stats-taxonomic_status.csv
 - grazia-festschrift-tb_stats-treatCit_cited_authors.csv
 
 Edit main.py to indicate the path to this folder. Finally, navigate to the aforementioned folder using your terminal of preference and run `pipenv run python main.py`.
