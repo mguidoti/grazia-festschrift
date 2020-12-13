@@ -3,8 +3,8 @@
 </h2>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.4315998">
-      <img alt="Digital Object Identifier" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4315998.svg"/>
+  <a href="https://doi.org/10.5281/zenodo.4319340">
+      <img alt="Digital Object Identifier" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4319340.svg"/>
   </a>
 </p>
 
