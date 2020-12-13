@@ -90,6 +90,18 @@ def fix_journal(entry):
   return entry
 
 
+def fix_pagination(entry):
+  
+  pages = entry.split('-')
+  start_page = int(pages[0])
+  
+  if len(pages) > 1:
+    end_page = int(pages[1])
+    return end_page - start_page
+
+  return 1
+
+
 def transform(filepath, filename):
   """
 
@@ -101,8 +113,8 @@ def transform(filepath, filename):
   # Creating df, dealing with None
   df = pd.read_csv(path.join(filepath, filename))
 
-  
   df.Journal = df.Journal.apply(fix_journal)
+  df['pages'] = df.Pagination.apply(fix_pagination)
   
   df.to_csv(path.join('output', '{}-transformed.csv'.format(
                                                       filename[:-4])),
